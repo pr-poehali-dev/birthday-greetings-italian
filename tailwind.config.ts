@@ -61,7 +61,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Birthday theme colors
+				'party-red': '#FF6B6B',
+				'party-coral': '#FF6B6B',
+				'party-turquoise': '#4ECDC4',
+				'party-sky': '#45B7D1',
+				'party-mint': '#FFECEB',
+				'party-yellow': '#FFE66D',
+				'party-lavender': '#DDA0DD'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +92,43 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'bounce-gentle': {
+					'0%, 20%, 50%, 80%, 100%': {
+						transform: 'translateY(0)'
+					},
+					'40%': {
+						transform: 'translateY(-10px)'
+					},
+					'60%': {
+						transform: 'translateY(-5px)'
+					}
+				},
+				'confetti': {
+					'0%': {
+						transform: 'rotate(0deg) translateY(0) scale(1)',
+						opacity: '1'
+					},
+					'100%': {
+						transform: 'rotate(360deg) translateY(-200px) scale(0.5)',
+						opacity: '0'
+					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0px)'
+					},
+					'50%': {
+						transform: 'translateY(-20px)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'bounce-gentle': 'bounce-gentle 2s infinite',
+				'confetti': 'confetti 3s ease-out infinite',
+				'float': 'float 3s ease-in-out infinite'
 			}
 		}
 	},
