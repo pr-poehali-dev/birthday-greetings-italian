@@ -181,7 +181,7 @@ const Index = () => {
                     alt={photo.title}
                     className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gray-100" />
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-party-sky mb-2">{photo.title}</h3>
